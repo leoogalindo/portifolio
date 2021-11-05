@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;300;200&display=swap');
+
+body, button, input, select, textarea{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+:root{
+    --dark-pink: #CE225A;
+    --background: #000a0e;
+    --pink: #F50756;
+    --title-two: #E95150;
+
+    --menu-height: 75px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    background: var(--background);
+}
+
+
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h1, h2{
+    margin: 0;
+    font-weight: 400;
+}
+
+button{
+    background: var(--dark-pink);
+    border: 0;
+    border-radius: 16px;
+    padding: 8px 35px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header{
+    height: calc(100vh - var(--menu-height));
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container img{
+    display: none;
+}
+
+header .container h1{
+    color:var(--pink);
+}
+
+header .container button{
+    margin-top: 40px;
+}
+
+header img{
+    width: 50%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: var(--menu-height);
+    justify-content: space-between;
+    padding: 0 100px;
+    position: sticky;
+    top:0;
+    background: var(--background);
+}
+
+nav img{
+    height: 45px;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+nav ul a{
+    font-size: 24px;
+    color: var(--dark-pink);
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+nav ul a svg{
+    display: none;
+}
+
+section{
+    background: green;
+    height: 1500px;
+}
+
+@media screen and (max-width: 1000px){
+    nav{
+        padding: 0 30px;
+    }
+    nav ul a{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .container{
+        width:100%;
+    }
+
+    header .container img{
+        display: inline;
+        height: 40px;
+        width: 125px;
+        margin-bottom: 30px;
+    }
+
+    nav{
+        padding: 30px;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .container{
+        padding: 0 30px;
+        margin-bottom: 40px;
+    }
+
+    nav{
+        padding: 0 15px;
+    }
+
+    nav ul a{
+        font-size: 13px;
+        margin: 0 7px;   
+    }
+
+    nav ul a svg{
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    
+
+}
