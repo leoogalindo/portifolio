@@ -23,7 +23,6 @@ html, body{
     background: var(--background);
 }
 
-
 h1{
     font-size: 44px;
 }
@@ -166,11 +165,15 @@ section{
 
     header .container{
         padding: 0 30px;
-        margin-bottom: 40px;
+        margin: 15px 0 40px 0;
     }
 
     nav{
         padding: 0 15px;
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        width: 100%;
     }
 
     nav ul a{
