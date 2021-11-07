@@ -45,6 +45,14 @@ button{
     font-size: 18px;
 }
 
+.tittle-pink{
+    color:var(--pink)
+}
+
+.titile-darkpink{
+    color: var(--dark-pink);
+}
+
 header{
     height: calc(100vh - var(--menu-height));
     display: flex;
@@ -59,10 +67,6 @@ header .container{
 
 header .container img{
     display: none;
-}
-
-header .container h1{
-    color:var(--pink);
 }
 
 header .container button{
@@ -106,9 +110,23 @@ nav ul a svg{
     display: none;
 }
 
-section{
-    background: green;
-    height: 1500px;
+.aboutme{
+    display: flex;
+    padding:100px;
+}
+
+.aboutme .container{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.aboutme .img-container{
+    width: 50%;
+    text-align: center;
+}
+
+.aboutme .img-container img{
+    width: 75%;    
 }
 
 @media screen and (max-width: 1000px){
@@ -165,7 +183,7 @@ section{
 
     header .container{
         padding: 0 30px;
-        margin: 15px 0 40px 0;
+        margin-bottom: 40px;
     }
 
     nav{
