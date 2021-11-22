@@ -467,7 +467,15 @@ p{
         padding: 0 20px;
     }
 
+    .curriculum .container .content{
+        font-size: 14px;
+    }
+
     .curriculum .container .content .curriculum-info{
-        padding: 0 15px;
+        padding: 0px;
+    }
+
+    .secundary-button{
+        font-size: 16px;
     }
 }
