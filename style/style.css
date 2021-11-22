@@ -8,6 +8,7 @@ body, button, input, select, textarea{
 :root{
     --dark-pink: #CE225A;
     --background: #000a0e;
+    --medium-black: #031218;
     --pink: #F50756;
     --title-two: #E95150;
 
@@ -43,6 +44,19 @@ button{
     padding: 8px 35px;
     font-weight: bold;
     font-size: 18px;
+}
+
+.secundary-button{
+    background: var(--medium-black);
+    border: 1px solid var(--dark-pink);
+    font-weight: bold;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.secundary-button img{
+    margin-right: 15px;
 }
 
 .title-pink{
@@ -160,7 +174,7 @@ nav ul a svg{
     margin: 60px auto 0;
 }
 
-.services .services-container .service-card {
+.services .services-container .service-card{
     max-width: 360px;
     background: #01141b;
     border: 1px solid var(--dark-pink);
@@ -267,8 +281,33 @@ p{
     margin: 0;
 }
 
+.curriculum{
+    padding: 0 100px;
+    text-align: center;
+}
 
+.curriculum .container{
+    display: flex;
+    margin: 50px 0;
+    max-width: 1200px;
+    margin: 50px auto;
+}
 
+.curriculum .container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.curriculum .container .content .curriculum-info{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+}
 
 @media screen and (max-width: 1000px){
     nav{
@@ -317,6 +356,17 @@ p{
        height: 100%;
     }
     
+    .curriculum .container{
+        flex-wrap: wrap;
+    }
+
+    .curriculum .container .curriculum-img{
+        display: block;
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 520px;
+    }
+
 }
 
 
@@ -413,6 +463,11 @@ p{
         margin-left: 0;
     }
 
-    
+    .curriculum{
+        padding: 0 20px;
+    }
 
+    .curriculum .container .content .curriculum-info{
+        padding: 0 15px;
+    }
 }
