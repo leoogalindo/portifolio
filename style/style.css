@@ -10,13 +10,16 @@ body, button, input, select, textarea{
     --background: #000a0e;
     --medium-black: #031218;
     --pink: #F50756;
-    --title-two: #E95150;
-
+    
     --menu-height: 75px;
 }
 
 *{
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 html, body{
